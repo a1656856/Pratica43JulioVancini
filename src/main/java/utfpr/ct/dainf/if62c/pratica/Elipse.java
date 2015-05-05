@@ -11,8 +11,8 @@ package utfpr.ct.dainf.if62c.pratica;
  * @author a1656856
  */
 public class Elipse{
-    public static double r;
-    public static double s;
+    public double r;
+    public double s;
     
     
     public Elipse(double r, double s){
@@ -34,7 +34,7 @@ public class Elipse{
        
     public double getPerimetro(double r , double s){
         double Perimetro;
-        Perimetro = Math.PI*(3*(r+s)-Math.sqrt((3*r+s)*(r+3*s)));
+        Perimetro = Math.PI*((3*(r+s))- (Math.sqrt((3*r+s)*(r+3*s))));
         return (Perimetro);
     }    
 

@@ -19,14 +19,13 @@ public class Circulo extends Elipse{
         
         
     }
-    public double getArea(double r){
-        return(getArea(r,r));
-    }
     
     
-    public double getPerimetro(double r){
-        
-        
+    
+    @Override
+    public double getPerimetro(double r,double s){
+       
+       
         return(2*Math.PI*r);
         
         

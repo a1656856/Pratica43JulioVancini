@@ -23,8 +23,8 @@ public class Pratica41 {
       public static void main(String[] args){
           System.out.println("Area da Elipse: " + e.getArea(2,3));
           System.out.println("Perimetro da Elipse: " + e.getPerimetro(2,3));
-          System.out.println("Area do Circulo: "+ c.getArea(2));
-          System.out.println("Perimetro do Cirulo: " + c.getPerimetro(2));
+          System.out.println("Area do Circulo: "+ c.getArea(2,2));
+          System.out.println("Perimetro do Cirulo: " + c.getPerimetro(2,2));
           
       }
     
