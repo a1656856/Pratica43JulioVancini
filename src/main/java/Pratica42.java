@@ -11,7 +11,7 @@ import utfpr.ct.dainf.if62c.pratica.Elipse;
  *
  * @author a1656856
  */
-public class Pratica41 {
+public class Pratica42 {
      
       
      
@@ -21,10 +21,10 @@ public class Pratica41 {
       
       
       public static void main(String[] args){
-          System.out.println("Area da Elipse: " + e.getArea(2,3));
-          System.out.println("Perimetro da Elipse: " + e.getPerimetro(2,3));
-          System.out.println("Area do Circulo: "+ c.getArea(2,2));
-          System.out.println("Perimetro do Cirulo: " + c.getPerimetro(2,2));
+          System.out.println("Area da Elipse: " + e.getArea());
+          System.out.println("Perimetro da Elipse: " + e.getPerimetro());
+          System.out.println("Area do Circulo: "+ c.getArea());
+          System.out.println("Perimetro do Cirulo: " + c.getPerimetro());
           
       }
     

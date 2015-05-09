@@ -10,31 +10,35 @@ package utfpr.ct.dainf.if62c.pratica;
  *
  * @author a1656856
  */
-public class Elipse{
+public class Elipse implements FiguraComEixos{
     public double r;
     public double s;
     
+    @Override
+    public double getEixoMaior(){
+        
+        return r; 
+    }
+    @Override
+    public double getEixoMenor(){
+        return s;
+    }
     
     public Elipse(double r, double s){
         this.r = r;
         this.s = s;
+        
     }
-    
-    /**
-     *
-     * @param r
-     * @param s
-     * @return
-     */
-    public double getArea(double r ,double s){
+
+    public double getArea(){
         double Area;
-        Area = Math.PI*r*s;
+        Area = Math.PI*getEixoMaior()*getEixoMenor();
         return (Area);
     }
        
-    public double getPerimetro(double r , double s){
+    public double getPerimetro(){
         double Perimetro;
-        Perimetro = Math.PI*((3*(r+s))- (Math.sqrt((3*r+s)*(r+3*s))));
+        Perimetro = Math.PI*((3*(getEixoMaior()+getEixoMenor()))- (Math.sqrt((3*getEixoMaior()+getEixoMenor())*(getEixoMaior()+3*getEixoMenor()))));
         return (Perimetro);
     }    
 

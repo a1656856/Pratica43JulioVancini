@@ -20,13 +20,19 @@ public class Circulo extends Elipse{
         
     }
     
-    
-    
     @Override
-    public double getPerimetro(double r,double s){
+    public double getArea(){
+        
+        double Area = Math.PI*Math.pow(getEixoMaior(),2);
+        return(Area);
+    }
+    
+   
+    @Override
+    public double getPerimetro(){
        
-       
-        return(2*Math.PI*r);
+       double Perimetro = 2*Math.PI*getEixoMaior();
+        return(Perimetro);
         
         
         
