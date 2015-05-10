@@ -29,12 +29,12 @@ public class TrianguloEquilatero implements FiguraComLados {
     } 
     public double getArea(){
         double Area;
-        Area = (a*h)/2;
+        Area = (getLadoMenor()*getLadoMaior())/2;
          return(Area);       
     }
     public double getPerimetro(){
         double Perimetro;
-        Perimetro = 3*a;
+        Perimetro = 3*getLadoMenor();
         return (Perimetro);
     }
 }
